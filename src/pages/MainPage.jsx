@@ -1,10 +1,9 @@
 import React from 'react';
 
-export default function MainPage() {
-  return (
-    <div>
-      
-    </div>
-  );
-}
+import ListCard from '../components/ListCard';
 
+const Main = () => {
+  return <ListCard />;
+};
+
+export default Main;

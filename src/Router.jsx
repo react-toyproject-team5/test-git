@@ -1,7 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom';
 import App from './App';
-import ListCard from './components/ListCard';
 import MainPage from './pages/MainPage';
+import DetailPage from './pages/DetailPage';
 
 //라우터 구조
 //<App>
@@ -16,7 +16,7 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <MainPage /> },
       { path: 'posts', element: <MainPage /> },
-      { path: 'posts/:postsId', element: <ListCard /> },
+      { path: 'posts/:postsId', element: <DetailPage /> },
     ],
   },
 ]);
